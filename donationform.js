@@ -6,32 +6,32 @@ function makeDonation() {
     var donationHundred = document.getElementById('hundred');
     var donationOther = document.getElementById('other');
     // var amount = document.getElementById('amount');
-    var donationAmount;
+    var donationAmount = document.getElementById('other');
 
-    // selectAmount
-    document.getElementById('amount').addEventListener('click', function () {
-        var target = evt.target;
+    // // selectAmount
+    // document.getElementById('amount').addEventListener('click', function () {
+    //     var target = evt.target;
 
-        if (target.id === 'thirty') {
-            donationAmount = '30.00';
-        }
-        else if (target.id === 'fifty') {
-            donationAmount = '50.00';
-        }
-        else if (target.id === 'hundred') {
-            donationAmount = '100.00';
-        }
-    })
+    //     if (target.id === 'thirty') {
+    //         donationAmount = '30.00';
+    //     }
+    //     else if (target.id === 'fifty') {
+    //         donationAmount = '50.00';
+    //     }
+    //     else if (target.id === 'hundred') {
+    //         donationAmount = '100.00';
+    //     }
+    // })
 
-    // setAmount
-    document.getElementById('amount').addEventListener('click', function () {
-        var target = evt.target;
+    // // setAmount
+    // document.getElementById('amount').addEventListener('click', function () {
+    //     var target = evt.target;
 
-        if (target.id === 'other') {
-            donationAmount = other.value;
-        }
-    })
+    //     if (target.id === 'other') {
+    //         donationAmount = other.value;
+    //     }
+    // })
 
     donationConfirmation.innerHTML =
-        personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at" + email.value + ".";
+        personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
 }
